@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".CardActivity">
+
+
+    <LinearLayout
+        android:id="@+id/wrapper_card_Insert"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:backgroundTint="@color/colorFont"
+            android:textColor="@color/colorFontLite"
+            android:textColorHint="@color/colorFontHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_key"
+            android:hint="word"
+            android:inputType="text"/>
+
+        <EditText
+            android:backgroundTint="@color/colorFont"
+            android:textColor="@color/colorFontLite"
+            android:textColorHint="@color/colorFontHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_value"
+            android:hint="meaning"
+            android:inputType="text"/>
+        <EditText
+            android:backgroundTint="@color/colorFont"
+            android:textColor="@color/colorFontLite"
+            android:textColorHint="@color/colorFontHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_pronunciation"
+            android:hint="pronunciation"
+            android:inputType="text"/>
+        <EditText
+            android:backgroundTint="@color/colorFont"
+            android:textColor="@color/colorFontLite"
+            android:textColorHint="@color/colorFontHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_description"
+            android:hint="description"
+            android:inputType="textMultiLine"
+            android:lines="4"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_save_card"
+            android:text="save"
+            android:layout_gravity="center"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_cancel_card"
+            android:text="cancel"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wrapper_card_list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="4dp"
+            android:id="@+id/cardListView"
+            android:dividerHeight="10dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
